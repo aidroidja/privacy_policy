@@ -1,26 +1,26 @@
-# Privacy Policy
+# AidroidJa — Privacy & data deletion (Netlify)
 
-This repository contains the privacy policy page for [Your Company/App Name].
+Public site for [aidroidprivacy.netlify.app](https://aidroidprivacy.netlify.app).
 
-## Contents
+| Path | File |
+|------|------|
+| `/` | `index.html` — privacy policy |
+| `/delete` | `delete/index.html` — Play Console delete-data URL |
+| `/app-ads.txt` | AdMob app-ads.txt |
 
-- `index.html` - The main privacy policy page
+## Deploy
 
-## Usage
+Connected to Netlify from this repo. Publish directory: `.` (root). No build command.
 
-You can view the privacy policy by opening `index.html` in a web browser or hosting it on a web server.
+## Local preview
 
-## Customization
+```bash
+python3 -m http.server 8080
+```
 
-Before using this privacy policy, please:
+- Privacy: http://localhost:8080/
+- Delete: http://localhost:8080/delete/
 
-1. Replace `[Your Company/App Name]` with your actual company or app name
-2. Update the contact information (email and address) in the Contact Us section
-3. Review and modify the content to match your actual data collection and usage practices
-4. Consult with a legal professional to ensure compliance with applicable laws and regulations
-5. Update the "Last updated" date when you make changes
+## Add another app (data deletion)
 
-## Disclaimer
-
-This privacy policy is a template. You should review it carefully and customize it according to your specific needs and legal requirements. It is recommended to consult with a legal professional before publishing.
-
+Edit `delete/index.html`: add a nav link and a new app section. Keep the same `/delete` URL in Play Console.

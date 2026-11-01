@@ -1,0 +1,17 @@
+[build]
+  publish = "."
+
+[dev]
+  framework = "#static"
+  publish = "."
+
+# Serve the data deletion page at /delete (Play Console URL path)
+[[redirects]]
+  from = "/delete"
+  to = "/delete/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/delete/"
+  to = "/delete/index.html"
+  status = 200
